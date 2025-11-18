@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Professor Johnny Braga - Perfis da Turma</title>
+  <link rel="stylesheet" href="professor.css">
+  <!-- Fonte moderna do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topo-prof">
+    <div class="topo-conteudo">
+      <h1>Professor Johnny Braga</h1>
+      <p>Perfis da Turma – Desenvolvimento de Sistemas</p>
+      <span class="badge">Projeto Git &amp; GitHub • HTML &amp; CSS</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Selecione o perfil de um aluno</h2>
+      <p>
+        Cada cartão abaixo representa um aluno da turma.  
+        Clique no botão <strong>“Ver página do aluno”</strong> para abrir o perfil
+        criado por ele em HTML e CSS.
+      </p>
+    </section>
+
+    <section class="grid-alunos">
+
+      <!-- MODELO DE CARD DO ALUNO – DUPLICAR E EDITAR -->
+      <article class="card-aluno">
+        <h3>Nome do Aluno 1</h3>
+        <p class="descricao-aluno">
+          Aluno(a) do curso de Desenvolvimento de Sistemas.
+        </p>
+        <button class="btn-perfil"
+                onclick="window.location.href='perfis/aluno1.html'">
+          Ver página do aluno
+        </button>
+      </article>
+
+      <article class="card-aluno">
+        <h3>Nome do Aluno 2</h3>
+        <p class="descricao-aluno">
+          Aluno(a) do curso de Desenvolvimento de Sistemas.
+        </p>
+        <button class="btn-perfil"
+                onclick="window.location.href='perfis/aluno2.html'">
+          Ver página do aluno
+        </button>
+      </article>
+
+      <!-- EXEMPLO REAL (AJUSTE O NOME E O ARQUIVO DO ALUNO) -->
+      <article class="card-aluno">
+        <h3>Maria Silva</h3>
+        <p class="descricao-aluno">
+          Focada em Front-end e UX. Apaixonada por HTML, CSS e interfaces modernas.
+        </p>
+        <button class="btn-perfil"
+                onclick="window.location.href='perfis/maria_silva.html'">
+          Ver página do aluno
+        </button>
+      </article>
+
+      <!--
+        PARA CADA NOVO ALUNO:
+        1. Copie um <article class="card-aluno">...</article>
+        2. Troque o <h3> pelo nome do aluno
+        3. Opcional: altere o texto da <p class="descricao-aluno">
+        4. Ajuste o caminho do arquivo HTML no onclick (ex: 'perfis/joao_souza.html')
+      -->
+
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto colaborativo de Git &amp; GitHub • SENAI – Desenvolvimento de Sistemas</p>
+  </footer>
+</body>
+</html>
